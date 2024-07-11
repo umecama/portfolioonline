@@ -1,0 +1,678 @@
+@charset "utf-8";
+/* CSS Document */
+/* Reset some basic styles */
+
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Use the "Caveat" font */
+body {
+    font-family: 'Caveat', cursive;
+    background-color: #4facfe; /* Blue background */
+    min-height: 100vh; /* Minimum height of viewport */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navigation styling */
+nav {
+    
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    position: relative; /* Ensure it stays at the top */
+    z-index: 2; /* Ensure it's above other elements */
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Smaller font size */
+    padding: 8px 12px; /* Padding inside the boxes */
+    border-radius: 10px; /* Slightly rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff; /* White background on hover */
+    color: #4facfe; /* Blue text on hover */
+    transform: scale(1.05); /* Slight scale increase on hover */
+	
+	
+}.portfolio-name {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem; /* Adjust size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add black shadow */
+	
+	
+}
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh; /* Adjusted height */
+    background-color: #bddffe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 20px; /* Adjusted top margin */
+}
+.banner-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+    font-family: 'Caveat', cursive; /* Apply cursive font */
+}
+.wrapper {
+    width: 800%;
+    max-width: 1000px;
+    height: 240px ;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1); /* Shadow with more depth */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+}
+.banner-text-bg {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 50px; /* Adjust height as needed */
+    background-color: rgba(255, 255, 255, 0.3); /* White background with 30% opacity */
+    z-index: 0;
+    border-radius: 20px; /* Rounded corners */
+}
+
+.banner-text-bg:hover {
+    background-color: #fff; /* White background on hover */
+}
+
+.banner-text:hover {
+    color: #202020;
+}
+
+
+ .banner-container {
+    width: 100%;
+	 height: 100%;
+	 position: inherit;
+   z-index: -1;
+	 background-color: transparent; /* Make the background transparent */
+
+	 
+}
+
+.banner-container img {
+    width: 160%;
+    height:65%;
+	opacity: 0; /* Set opacity to 0 for complete transparency */
+	
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    box-sizing: border-box;
+    margin-top: -5px; /* Move the wrapper higher */
+    border: 2px solid black; /* Black stroke around the wrapper */
+}
+
+.image-container {
+    position: fixed;
+    top: 117%;
+    left: 20% ;
+     width: 300px; /* Increased width */
+    height: 50%;
+    z-index: 1; /* Ensure it's above other content */
+    transform: translateY(-50%); /* Move it up by 50% of its own height */
+    overflow: hidden; /* Hide overflow */
+ 
+}
+
+.slide-image {
+    display: flex;
+    width: 2500%; /* Total width of all slides */
+    height: 1500%;
+    transition: transform 0.5s ease;
+}
+
+.slide-image label {
+    flex: 1 0 100%; /* Equal width for each slide */
+}
+
+.slide-image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: 100%; /* Ensure the image fills its container */
+    object-fit: cover; /* Cover entire container */
+}
+
+#slide1:checked ~ .slide-image {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slide-image {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slide-image {
+    transform: translateX(-200%);
+}
+.separator {
+    position: absolute;
+    top: 74%; /* Adjusted to vertically center the separator */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust font size */
+    color: white; /* Adjust color */
+}
+
+.separator-box {
+    position: absolute;
+    top: 85% ; /* Adjusted to be below the separator */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:white ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.box-content {
+    color: #4facfe;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	
+}
+
+
+.separator-under {
+    position: absolute;
+    bottom: -950px; /* Adjust distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust font size */
+    color: white; /* Adjust color */
+}
+
+.separator-box1 {
+    position: absolute;
+    top: 145% ; /* Adjusted to be below the separator */
+    right: 55%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:#1c5bfd ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.box-content1 {
+    color: white;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	
+}
+
+.small-white-box{
+    position: absolute;
+    top: 185% ; /* Adjusted to be below the separator */
+    right: 52%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color:white ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+ transition: background-color 0.3s ease;
+   background-image: none; /* Initial no background image */
+    background-size: cover; /* Cover the entire box with the image */
+    background-position: center; /* Center the image */
+}
+
+.small-white-box:hover {
+    background-image: url(https://yt3.googleusercontent.com/ytc/AL5GRJUPysv0O1Xfkj27UsozIYQSut_oqXR_Z97BrXF1=s900-c-k-c0x00ffffff-no-rj); /* Hover background image */
+}
+.small-white-box-content {
+    color: #4f80fe;
+	width: 100%;
+    font-size: 1.1rem; /* Adjust font size */
+    font-weight: bold;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	margin-top: 11%;
+
+
+}
+
+.small-white-box1{
+    position: absolute;
+    top: 185% ; /* Adjusted to be below the separator */
+    left: 51%;
+	
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color:white ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	 background-image: none; /* Initial no background image */
+    background-size: cover; /* Cover the entire box with the image */
+    background-position: center; /* Center the image */
+}
+
+.small-white-box1:hover {
+    background-image: url(https://3.bp.blogspot.com/-5hsnTO2X6As/TgiWmCe2YSI/AAAAAAAAAO4/JI_R3pXayyw/s1600/untitled.bmp); /* Hover background image */
+}
+.small-white-box-content1 {
+    color: #4f80fe;
+	width: 100%;
+    font-size: 1.rem; /* Adjust font size */
+    font-weight: bold;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	margin-top: 11%;
+}
+.small-white-box2{
+    position: absolute;
+    top: 185% ; /* Adjusted to be below the separator */
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color:white ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	background-image: none; /* Initial no background image */
+    background-size: cover; /* Cover the entire box with the image */
+    background-position: center; /* Center the image */ /* Centered background position */
+
+}
+
+
+.small-white-box-content2 {
+    color: #4f80fe;
+	width: 100%;
+    font-size: 1.1rem; /* Adjust font size */
+    font-weight: bold;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	margin-top: 11%;
+}
+
+.small-white-box2:hover {
+    background-image: url(https://hr2u.uitm.edu.my/hr2u/GuidelineScreenshot/uitm_logo.png); /* Hover background image */
+}
+
+.hover-text {
+    position: absolute;
+    top: 220%; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem; /* Adjust font size */
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow */
+}
+
+.separator-box2 {
+    position: absolute;
+    top: 250% ; /* Adjusted to be below the separator */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:white ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+
+}
+
+.box-content2 {
+    color: #4facfe;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+}
+
+.separator-box3 {
+    position: absolute;
+    top: 270% ; /* Adjusted to be below the separator */
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:#1c5bfd ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.box-content3 {
+    color: white;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	
+}
+
+.separator-box4 {
+    position: absolute;
+    top: 270% ; /* Adjusted to be below the separator */
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:#1c5bfd ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.box-content4 {
+    color: white;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	
+}
+
+.image-left-container {
+    position: fixed;
+    top: 200%; /* Adjust this value to move the image vertically */
+   left: -850px; /* Adjust this value to move the image horizontally */
+    z-index: 2; /* Ensure it's above other elements if needed */
+}
+
+.image-left-container img {
+    height: 250px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+
+
+.image-left-container1 {
+    position: fixed;
+    top: 200%; /* Adjust this value to move the image vertically */
+   left: -550px; /* Adjust this value to move the image horizontally */
+    z-index: -2; /* Ensure it's above other elements if needed */
+}
+
+.image-left-container1 img {
+    height: 250px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+ 
+.image-left-container2 {
+    position: fixed;
+    top: 710%; /* Adjust this value to move the image vertically */
+   left: -840px; /* Adjust this value to move the image horizontally */
+    z-index: -2; /* Ensure it's above other elements if needed */
+}
+
+.image-left-container2 img {
+    height: 335px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+
+.image-left-container3 {
+    position: fixed;
+    top: 710%; /* Adjust this value to move the image vertically */
+   left: -550px; /* Adjust this value to move the image horizontally */
+    z-index: 2; /* Ensure it's above other elements if needed */
+}
+
+.image-left-container3 img {
+    height: 330px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+.image-left-container4 {
+    position: fixed;
+    top: 1380%; /* Adjust this value to move the image vertically */
+   left: -845px; /* Adjust this value to move the image horizontally */
+    z-index: 2; /* Ensure it's above other elements if needed */
+}
+
+.image-left-container4 img {
+    height: 300px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+
+.image-right-container {
+     position: fixed;
+    top: 200%; /* Adjust this value to move the image vertically */
+   right: -35px; /* Adjust this value to move the image horizontally */
+    z-index: -2000; /* Ensure it's above other elements if needed */
+}
+
+.image-right-container img {
+    height: 300px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+	  z-index: -2000; /* Ensure it's above other elements if needed */
+}
+
+.image-right-container1 {
+    position: absolute;
+    top: 282%; /* Adjust this value to move the image vertically */
+    right: 440px; /* Adjust this value to move the image horizontally */
+    z-index: -200; /* Ensure it's above other elements if needed */
+}
+
+.image-right-container1 img {
+    height: 300px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+
+.image-right-container2 {
+    position: absolute;
+    top: 330%; /* Adjust this value to move the image vertically */
+    right: 160px; /* Adjust this value to move the image horizontally */
+    z-index: -200; /* Ensure it's above other elements if needed */
+}
+
+.image-right-container2 img {
+  height: 350px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+
+.image-right-container3 {
+    position: absolute;
+    top: 330%; /* Adjust this value to move the image vertically */
+    right: 400px; /* Adjust this value to move the image horizontally */
+    z-index: -200; /* Ensure it's above other elements if needed */
+}
+
+.image-right-container3 img {
+    height: 300px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+}
+
+.small-white-box3 {
+    position: absolute;
+    top: 270%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  opacity: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.separator-box5 {
+     position: absolute;
+    top: 440% ; /* Adjusted to be below the separator */
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:#1c5bfd ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.box-content5 {
+    color: white;
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	
+
+}
+.separator-box5 p {
+    color: white;
+	line-height: 45px; 
+	margin-top: 10%
+}
+.separator-box5 img {
+	width: 100%;
+	margin-left: 140%;
+	margin-top: -50%;
+}
+
+.pic {
+	height: 20%;
+	width: 60%;
+	margin-left: 170%;
+	margin-top: -55%;
+}
+
+.pic1 {
+	width: 100%;
+	margin-left: -120%;
+	margin-top: 80%;
+}
+
+
+.separator-box6{
+     position: absolute;
+    top: 540% ; /* Adjusted to be below the separator */
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:#1c5bfd ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.box-content6{
+    color: white;
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+}
+
+.separator-last {
+    position: absolute;
+    bottom: -570px; /* Adjust distance from bottom */
+    left: -70.5%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust font size */
+    color: white; /* Adjust color */
+}
+
+
+
+.separator-footer {
+    position: absolute;
+    bottom: -5000px; /* Adjust distance from bottom */
+    left: -10.5%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust font size */
+    color: black; /* Adjust color */
+}
+
+.separator-box7 {
+    position: absolute;
+    top: 620% ; /* Adjusted to be below the separator */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; /* Adjust width as needed */
+    height: 55px; /* Adjust height as needed */
+    background-color:white ; /* Color of the separator box */
+    border-radius: 25px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.box-content7 {
+    color: #4facfe;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+    line-height: 45px; /* Adjust line height to center vertically */
+	
+}
+
+
+
+ 

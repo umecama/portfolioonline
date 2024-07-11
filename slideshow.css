@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+/* Reset some basic styles */
+
+.slideshow-container {
+            width: 13000px;
+	height: 55%;
+            position: relative;
+            margin: auto;
+	left: 100px; /* Move to the left */
+            top: 3580px; /* Move downward */
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+
+
+
+.content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-link {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #1da1f2;
+        }
+
+
+
+

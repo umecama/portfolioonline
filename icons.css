@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+.social-icons {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 100; /* Ensure it appears above other content */
+	width: 3%;
+}
+
+.social-icons .icon {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+    color: #007bff; /* Icon color */
+    text-decoration: none;
+}
+
+.social-icons .icon:hover {
+    color: #0056b3; /* Icon color on hover */
+}
+
+ .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url( "../../../Downloads/1ea85f1ce083fbc336661b7d0ce75019.png");
+            background-size: cover;
+            background-position: center;
+            z-index: -100000; /* Ensure it's behind everything */
+        }
+
+
+
+.footer {
+            background-color: #1e3c72; /* Dark blue color */
+            color: #ffffff; /* White text color */
+            padding: 20px;
+            text-align: center;
+	width: 5000%;
+	margin-top: 600%;
+	margin-left: -150%;
+        }
+
+.footer p {
+	margin-left: 20%;
+}

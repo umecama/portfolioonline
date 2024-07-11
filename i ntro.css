@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.about-container {
+    position: relative;
+    margin-top: 1000px; /* Adjust as needed */
+    padding: 100px;
+}
+
+.about-box {
+    position: absolute;
+    top: 32%;
+    left: 120%;
+    width: 250%;
+    height: 25%;
+    background-color: white;
+    z-index: -2;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-text {
+    width: 500%; /* Adjust width as needed */
+	height: 600px;
+	 margin-left: 250%; /* Adjust horizontally as needed */
+    color:#4f80fe; /* Adjust text color */
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.7; /* Adjust line height */
+    text-align: left; /* Align text to the left */
+    margin-top:245px; /* Adjust top margin */
+	 font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}

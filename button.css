@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+#scrollToTopBtn {
+    position: fixed;
+	width: 5%;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 500%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(-20px); /* Adjust the value as needed */
+    animation: fadeInTopBottom 2s forwards;
+}
+
+@keyframes fadeInTopBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}

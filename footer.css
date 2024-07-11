@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content {
+            flex: 1;
+            padding: 200px;
+        }
+
+        .footer {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-link {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #1da1f2;
+        }
