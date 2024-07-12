@@ -3,13 +3,13 @@
 
 .about-container {
     position: relative;
-    margin-top: 100px; /* Adjust as needed */
+    margin-top: 10px; /* Adjust as needed */
     padding: 100px;
 }
 
 .about-box {
     position: absolute;
-    top: 2500%;
+    top: 7500%;
     left: 120%;
     width: 250%;
     height: 25%;
