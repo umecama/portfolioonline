@@ -3,13 +3,13 @@
 
 .about-container {
     position: relative;
-    margin-top: 100000px; /* Adjust as needed */
+    margin-top: 1000px; /* Adjust as needed */
     padding: 100px;
 }
 
 .about-box {
     position: absolute;
-    top: 10500%;
+    top: 500%;
     left: 120%;
     width: 250%;
     height: 25%;
@@ -26,7 +26,7 @@
     font-size: 1.2rem; /* Adjust font size */
     line-height: 1.7; /* Adjust line height */
     text-align: left; /* Align text to the left */
-    margin-top:25px; /* Adjust top margin */
+    margin-top:250px; /* Adjust top margin */
 	 font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 
